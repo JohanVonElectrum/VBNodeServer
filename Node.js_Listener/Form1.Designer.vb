@@ -36,7 +36,8 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(0, 0)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -45,6 +46,8 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox2.Location = New System.Drawing.Point(514, 3)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(529, 20)
@@ -64,6 +67,8 @@ Partial Class Form1
         '
         'ProgressBar1
         '
+        Me.ProgressBar1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ProgressBar1.Location = New System.Drawing.Point(514, 58)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(529, 23)
@@ -71,6 +76,7 @@ Partial Class Form1
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(924, 87)
         Me.Label1.Name = "Label1"
@@ -89,6 +95,8 @@ Partial Class Form1
         '
         'TextBox3
         '
+        Me.TextBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox3.Location = New System.Drawing.Point(515, 117)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(528, 20)

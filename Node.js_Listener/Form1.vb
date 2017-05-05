@@ -40,7 +40,7 @@ Public Class Form1
             ProgressBar1.Maximum = My.Computer.FileSystem.ReadAllText(TextBox2.Text).Length
             If ProgressBar1.Value < My.Computer.FileSystem.ReadAllText(TextBox2.Text).Length - 1 Then
                 Label1.Show()
-                Label1.Text = (ProgressBar1.Value * 58.1).ToString + "/" + My.Computer.FileSystem.ReadAllText(TextBox2.Text).Length.ToString
+                Label1.Text = (ProgressBar1.Value * (My.Computer.FileSystem.ReadAllText(TextBox2.Text).Length / 100)).ToString + "/" + My.Computer.FileSystem.ReadAllText(TextBox2.Text).Length.ToString
                 ProgressBar1.Value += 1
             ElseIf ProgressBar1.Value = My.Computer.FileSystem.ReadAllText(TextBox2.Text).Length - 1 Then
                 Label1.Hide()
